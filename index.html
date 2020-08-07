@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="side-bar">
+        <h1>Welcome to the Cipher</h1>
+        <p>You can type something into the input, and use the slider or the box to 
+            encode it. 
+        </p>
+        <form>
+            <input type="text" id="user-input" placeholder="Input some text">
+        </form>
+        <form>
+            <label class="range-num" for="range-input">0</label>
+            <input type="range" id="range-input" min=0 max=26 value=0>
+        </form>
+        <form>
+            <input type="submit" id="change-table" value="update square">
+        </form>
+        <table class="alphabet">
+            <tr class="1"><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th></tr>
+            <tr class="2"><th>f</th><th>g</th><th>h</th><th>i</th><th>j</th></tr>
+            <tr class="3"><th>k</th><th>l</th><th>m</th><th>n</th><th>o</th></tr>
+            <tr class="4"><th>p</th><th>q</th><th>r</th><th>s</th><th>t</th></tr>
+            <tr class="5"><th>u</th><th>v</th><th>w</th><th>x</th><th>y</th></tr>
+        </table>
+    </div>
+    <div class="result">
+        <div id="slider-encode"></div>
+        <div id="box-encode"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
